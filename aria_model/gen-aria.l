@@ -15,7 +15,7 @@
     ret))
 
 (defun parse-link.dat
-  (&key (path "link.dat"))
+  (&key (path "link_type2.dat"))
   "parse link.dat
 @param :path path of link.dat (including file name)
 @return (list (key0 . values0) (key1 . values1) ...)"
@@ -312,7 +312,7 @@
    (data *robot-data*)
    (id (cdr (assoc :id data)))
    (parent (cdr (assoc :parent data)))
-   (make-sasabot t)
+   (make-sasabot nil)
    )
 "generate urdf model
 @param :path target path, including filename, default \"aria.urdf\"
